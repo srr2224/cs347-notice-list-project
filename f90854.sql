@@ -27,7 +27,7 @@ prompt APPLICATION 90854 - ARL NOTICE LIST MANAGER
 -- Application Export:
 --   Application:     90854
 --   Name:            ARL NOTICE LIST MANAGER
---   Date and Time:   16:27 Wednesday April 29, 2015
+--   Date and Time:   16:53 Wednesday April 29, 2015
 --   Exported By:     ANGUYEN11@UTEXAS.EDU
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -110,7 +110,7 @@ wwv_flow_api.create_flow(
 ,p_rejoin_existing_sessions=>'N'
 ,p_csv_encoding=>'Y'
 ,p_last_updated_by=>'ANGUYEN11@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20150429161832'
+,p_last_upd_yyyymmddhh24miss=>'20150429164553'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_ui_type_name => null
 );
@@ -8015,7 +8015,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'ANGUYEN11@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20150429161832'
+,p_last_upd_yyyymmddhh24miss=>'20150429164553'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3437383542941012112)
@@ -8027,7 +8027,7 @@ wwv_flow_api.create_page_plug(
 ,p_plug_new_grid_column=>false
 ,p_plug_display_point=>'BODY'
 ,p_plug_item_display_point=>'BELOW'
-,p_plug_source=>'Welcome, <b>&P1_USER_EMPLOYEE_NAME.</b>, lab <b>&P1_USER_LAB.</b>.  You are logged in as &APP_USER. and have <b>ADMIN</b> access rights to this application.'
+,p_plug_source=>'Welcome, <b>&P1_USER_EMPLOYEE_NAME.</b>, lab <b>&P1_USER_LAB.</b>.  You are logged in as &APP_USER. and have <b>ADMIN</b> access rights to this application. <a href="f?p=&APP_ID.:205:&SESSION.">[developer page link]</a>'
 ,p_plug_query_row_template=>1
 ,p_plug_query_num_rows=>15
 ,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'

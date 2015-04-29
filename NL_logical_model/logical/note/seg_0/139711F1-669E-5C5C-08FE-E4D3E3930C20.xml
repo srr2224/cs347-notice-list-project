@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_4" directorySegmentName="seg_0" id="139711F1-669E-5C5C-08FE-E4D3E3930C20">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-23 16:37:05 UTC</createdTime>
+<comment>NOTE: Don&apos;t forget to manually rename the last two foreign keys that represent &quot;membership&quot; in the RELATIONAL model to: NL_EMPLOYEE_member_id and NL_NOTICE_LIST_member_id.&lt;br/&gt;&lt;br/&gt;</comment>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="AB9E2C9A-35D2-A751-410C-F31B339272C2" value="true"/>
+</engineerTo>
+</Note>

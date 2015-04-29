@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9F3175B9-43E2-4FD2-5887-7DB704F4A4D1" name="NL_DOCUMENT">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>85A28A6E-D0D8-EB28-E795-62D9925B313B</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="document_id" id="B587332A-36CD-BE03-E71E-4FDA34D5948F">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>B10CD76D-F2F0-F393-4624-8AFA5B2F6F40</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_name" id="BA92D04F-849C-C8EC-1624-BFF20D51D2A3">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>437A5622-9B0F-BA38-0062-7BCC460C38DB</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_comments" id="E2CE7C4F-820B-76AF-03E1-942BD181BCA6">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>3407A769-7164-8617-97A1-E043EAD44A61</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_mimetype" id="32C77096-EF98-78DF-4230-EDC38BD1CE58">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>ECE840DF-D152-43E2-17C0-238DB004551D</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_charset" id="193DB1E8-AAB9-3310-11B2-9668BC4FDE73">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>6F64A3D1-1A27-6CAD-D614-778CFA8CC1CD</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_data" id="F90DC23B-67A0-C603-A373-3B1814552137">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>1F24CE2A-44EA-93A5-DA4B-903CE437CA68</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tags" id="2F9F0FB7-DFF6-7B47-1C92-09A1423F92C0">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>07EF14B8-2E8B-504D-1E1A-0DADF424E5B1</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NL_EMPLOYEE_employee_id" id="3A46B6AA-9980-B2E2-97A0-0A1A3705843A">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>F378C329-452C-AFC5-FDF7-FDE6FBBCE0E3</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>F61EAAF8-8E0C-49A0-C406-3E083A9D16C2</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E8AD214-1987-83F8-6E58-C7DE03BB6C69" referredColumn="F61EAAF8-8E0C-49A0-C406-3E083A9D16C2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE2850C1-3532-0263-2F44-FB22B213F1AA" name="NL_DOCUMENT_PK">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>4D9AE67B-32F0-6C4B-9502-9794566DA2AF</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B587332A-36CD-BE03-E71E-4FDA34D5948F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="147DB672-7E1E-554F-19A6-B45E4FBF12F1" name="NL_DOCUMENT_NL_EMPLOYEE_FK">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>2E48E3A2-BCFD-7D05-7C53-27371CB3F719</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A46B6AA-9980-B2E2-97A0-0A1A3705843A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

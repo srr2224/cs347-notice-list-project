@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="83A4FAFC-ABAA-D28B-4664-A79348A5E23A" name="NL_EMPLOYEE">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>61D0981B-4F2C-6267-B106-41A7BC995C76</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employee_id" id="F61EAAF8-8E0C-49A0-C406-3E083A9D16C2">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>7DD579DB-26C7-F0A8-65D8-578AEDDB4F31</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="57D32584-08DE-4360-22B0-0D150993896C">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>9D284CF9-6947-B518-2B1D-72EF62CE1C76</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="middle_initial" id="B0A390DE-CB83-0589-602E-1A84D1814990">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>8A5ABBBD-B7FC-0E49-2423-4DD6C02EC9C8</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="518915A8-B403-E8E9-C4F1-32CF6C3B05B3">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>72B1EB13-38D2-028C-F615-A345016E0A65</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="DEDF30BC-7C2E-A7D8-958C-477BF348A6EA">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>F001827B-A904-A829-BF94-F7E8954D3CD2</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_eff_date" id="3C47B4FE-F9A9-C667-B1D9-D833D346466B">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>0D72AE58-DF77-D5B2-BDC7-AA5A90A5D095</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nl_user_type" id="46528BC4-3C0D-5142-F467-2C2B55FE4333">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>E0990ADD-866C-8714-A7FF-57468C19C60F</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apex_user" id="C3AC5D2F-C98E-E132-5116-3BB7B39087CE">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>92D65604-FC84-72BD-90C5-CA2FE6855F12</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NL_DIV_div_id" id="63C5C61F-B292-07EF-2B73-38A3E40675AE">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>D70B35D8-4085-204D-1569-F8D4A017FBDC</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>13067E7B-3E79-852A-57E8-C101BD42BAD2</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D252F34-6364-BED7-6683-82121AEBE44F" referredColumn="13067E7B-3E79-852A-57E8-C101BD42BAD2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98E35026-66B7-6919-3748-66F2AB856DC8" name="NL_EMPLOYEE_PK">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>23D9BB99-488A-4473-CDA2-46B2B28F9F01</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F61EAAF8-8E0C-49A0-C406-3E083A9D16C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6F34674-860B-B21D-BDE3-48AF56681754" name="NL_EMPLOYEE_NL_DIV_FK">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-24 20:29:22 UTC</createdTime>
+<generatorID>6E920766-3E3A-8D73-3FBA-DF4C0D9A5AB1</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63C5C61F-B292-07EF-2B73-38A3E40675AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2BAB1DEC-F8D4-246F-998B-1E51C9CA7FD2" name="NL_LAB">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-22 15:24:36 UTC</createdTime>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lab_id" id="8E4D8F0D-8247-177A-CBEA-FBD4232D99C8">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-22 15:24:46 UTC</createdTime>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="code" id="160BC484-93B4-0120-A3AF-8103BD1A93A2">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-22 15:25:02 UTC</createdTime>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="43C894FE-6A07-E072-168C-8BBC07C3640D" name="{entity} PK">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-22 15:24:52 UTC</createdTime>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8E4D8F0D-8247-177A-CBEA-FBD4232D99C8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

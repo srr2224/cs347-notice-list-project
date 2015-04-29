@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_3" directorySegmentName="seg_0" id="EE703159-7DF9-F8A8-58AE-7B79B0FD1913">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-16 18:06:49 UTC</createdTime>
+<comment>- NL has 0..N members&lt;br/&gt;- Member has one NL</comment>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="16E3BFE1-30E3-B194-536E-434B21E0BF85" value="true"/>
+</engineerTo>
+</Note>

@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9FB940E5-54C9-8219-3275-5EB81BB7509D" name="NL_NOTICE_LIST">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-14 20:10:49 UTC</createdTime>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="notice_list_id" id="DB4B3693-28AF-A096-DB52-362B5CAF290D">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-14 20:55:22 UTC</createdTime>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="name" id="B8B0E190-B7DF-77F2-2B3A-8258182F94E1">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-14 21:01:53 UTC</createdTime>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+</Attribute>
+<Attribute name="description" id="81187CE1-0B4C-629E-4E43-0F49E886A173">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-14 21:03:40 UTC</createdTime>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="ext_view_name" id="B5033B3B-2680-37A4-3FC9-7232A051CE04">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-14 21:04:48 UTC</createdTime>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+</Attribute>
+<Attribute name="status" id="DFC00A8F-B810-B417-19DF-ECDC64C9B711">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-14 21:07:33 UTC</createdTime>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+</Attribute>
+<Attribute name="status_eff_date" id="28576063-3067-0901-5CEB-6A055E5EBFCB">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-14 21:07:56 UTC</createdTime>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="div_id" id="67B87A5D-F7AE-A810-E380-1F128508C99F">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-22 16:22:50 UTC</createdTime>
+<generatorID>0388D4B4-6BC6-1AF7-D8E5-8879F9BC9446</generatorID>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<referedAttribute>EC6BD766-4F5D-D87D-D027-5BACA0A34FE0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8D9AAF4F-EBAD-F664-CE45-C42A8897181E" name="{entity} PK">
+<createdBy>Steven</createdBy>
+<createdTime>2015-04-14 20:59:27 UTC</createdTime>
+<ownerDesignName>NL_logical_model</ownerDesignName>
+<engineerTo>
+<item key="ABC0FE56-D248-4534-5400-907EB189B3FE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DB4B3693-28AF-A096-DB52-362B5CAF290D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

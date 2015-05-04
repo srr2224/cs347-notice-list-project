@@ -27,7 +27,7 @@ prompt APPLICATION 90854 - ARL NOTICE LIST MANAGER
 -- Application Export:
 --   Application:     90854
 --   Name:            ARL NOTICE LIST MANAGER
---   Date and Time:   16:53 Wednesday April 29, 2015
+--   Date and Time:   20:53 Monday May 4, 2015
 --   Exported By:     ANGUYEN11@UTEXAS.EDU
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -41,7 +41,7 @@ prompt APPLICATION 90854 - ARL NOTICE LIST MANAGER
 --     Computations:             2
 --     Processes:               35
 --     Regions:                 41
---     Buttons:                 51
+--     Buttons:                 50
 --     Dynamic Actions:          2
 --   Shared Components:
 --     Logic:
@@ -110,7 +110,7 @@ wwv_flow_api.create_flow(
 ,p_rejoin_existing_sessions=>'N'
 ,p_csv_encoding=>'Y'
 ,p_last_updated_by=>'ANGUYEN11@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20150429164553'
+,p_last_upd_yyyymmddhh24miss=>'20150504173454'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_ui_type_name => null
 );
@@ -8015,7 +8015,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'ANGUYEN11@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20150429164553'
+,p_last_upd_yyyymmddhh24miss=>'20150504173454'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3437383542941012112)
@@ -8610,30 +8610,14 @@ wwv_flow_api.create_page_plug(
 ,p_attribute_03=>'Y'
 );
 wwv_flow_api.create_page_button(
- p_id=>wwv_flow_api.id(3800689220657342775)
-,p_button_sequence=>10
-,p_button_plug_id=>wwv_flow_api.id(3636192980117335977)
-,p_button_name=>'SHUTTLE_COMMIT_NOTICE_LIST_CHANGES'
-,p_button_static_id=>'P1_COMMIT_NOTICE_LIST_CHANGES'
-,p_button_action=>'SUBMIT'
-,p_button_template_id=>wwv_flow_api.id(3375976484915595710)
-,p_button_image_alt=>'Commit Notice List Changes'
-,p_button_position=>'REGION_TEMPLATE_COPY'
-,p_button_condition=>':P1_SELECT_NOTICE_LIST > 0'
-,p_button_condition_type=>'PLSQL_EXPRESSION'
-,p_grid_new_grid=>false
-,p_grid_new_row=>'N'
-,p_grid_new_column=>'N'
-);
-wwv_flow_api.create_page_button(
  p_id=>wwv_flow_api.id(3258823244450028422)
 ,p_button_sequence=>20
 ,p_button_plug_id=>wwv_flow_api.id(3636192980117335977)
-,p_button_name=>'SHUTTLE_COMMIT_EMPLOYEE_CHANGES'
+,p_button_name=>'SHUTTLES_COMMIT_CHANGES'
 ,p_button_action=>'SUBMIT'
 ,p_button_template_options=>'#DEFAULT#'
 ,p_button_template_id=>wwv_flow_api.id(3375976484915595710)
-,p_button_image_alt=>'Commit Employee Changes'
+,p_button_image_alt=>'Commit Changes'
 ,p_button_position=>'REGION_TEMPLATE_COPY'
 ,p_button_condition=>':P1_SELECT_NOTICE_LIST > 0'
 ,p_button_condition_type=>'PLSQL_EXPRESSION'
@@ -9168,7 +9152,8 @@ wwv_flow_api.create_page_process(
 '                    m.NL_NOTICE_LIST_NOTICE_LIST_ID = :P1_SELECT_NOTICE_LIST); ',
 '                    ',
 '  delete from NL_MEMBER where ',
-'    NL_NOTICE_LIST_NOTICE_LIST_ID = :P1_SELECT_NOTICE_LIST and ',
+'    NL_NOTICE_LIST_NOTICE_LIST_ID = :P1_SELECT_NOTICE_LIST and',
+'    nl_employee_member_id is not null and',
 '    not exists (select 1 from apex_collections ',
 '    where collection_name = ''P1_EMPCOL'' and c001 = NL_EMPLOYEE_MEMBER_ID); ',
 'end;'))
@@ -9207,12 +9192,13 @@ wwv_flow_api.create_page_process(
 '                    ',
 '  delete from NL_MEMBER where ',
 '    NL_NOTICE_LIST_NOTICE_LIST_ID = :P1_SELECT_NOTICE_LIST and ',
+'    nl_notice_list_member_id is not null and',
 '    not exists (select 1 from apex_collections ',
 '    where collection_name = ''P1_NLCOL'' and c001 = NL_NOTICE_LIST_MEMBER_ID); ',
 'end;'))
 ,p_process_error_message=>'Error updating Notice List members.'
 ,p_error_display_location=>'INLINE_IN_NOTIFICATION'
-,p_process_when_button_id=>wwv_flow_api.id(3800689220657342775)
+,p_process_when_button_id=>wwv_flow_api.id(3258823244450028422)
 ,p_process_success_message=>'Notice List members successfully updated.'
 );
 end;
@@ -10068,7 +10054,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'ANGUYEN11@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20150429154227'
+,p_last_upd_yyyymmddhh24miss=>'20150504165139'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3763471681709876611)
@@ -10310,25 +10296,7 @@ wwv_flow_api.create_page_item(
 ,p_item_sequence=>20
 ,p_item_plug_id=>wwv_flow_api.id(3763471681709876611)
 ,p_prompt=>'Employee To Clone To:'
-,p_display_as=>'NATIVE_SELECT_LIST'
-,p_named_lov=>'CLONE_NL_EMPLOYEE_BY_USER_TYPE_LIST'
-,p_lov=>wwv_flow_utilities.join(wwv_flow_t_varchar2(
-'IF :P0_USER_TYPE = ''ADMIN'' THEN RETURN',
-'  ''select last_name || '''', '''' || first_name || '''' '''' || middle_initial as d, employee_id as r',
-'  from nl_employee',
-'  where upper(status) = ''''ACTIVE'''' and',
-'    employee_id <> :P51_EMPLOYEE',
-'  order by d'';',
-'ELSE RETURN',
-'  ''select last_name || '''', '''' || first_name || '''' '''' || middle_initial as d, employee_id as r',
-'  from nl_employee e',
-'    join nl_div d on e.nl_div_div_id = d.div_id',
-'    join nl_lab l on d.nl_lab_lab_id = l.lab_id',
-'  where l.code = :P1_USER_LAB and',
-'    upper(status) = ''''ACTIVE'''' and',
-'    employee_id <> :P51_EMPLOYEE',
-'  order by d'';',
-'END IF;'))
+,p_display_as=>'NATIVE_HIDDEN'
 ,p_cSize=>30
 ,p_cMaxlength=>4000
 ,p_cHeight=>1
@@ -10337,8 +10305,7 @@ wwv_flow_api.create_page_item(
 ,p_field_template=>wwv_flow_api.id(3375974463085595238)
 ,p_item_template_options=>'#DEFAULT#'
 ,p_lov_display_extra=>'YES'
-,p_attribute_01=>'NONE'
-,p_attribute_02=>'N'
+,p_attribute_01=>'Y'
 );
 wwv_flow_api.create_page_item(
  p_id=>wwv_flow_api.id(3840743129115113822)
@@ -10403,12 +10370,17 @@ wwv_flow_api.create_page_process(
 '',
 'if user_type = ''ADMIN'' then',
 '  insert into nl_member (nl_employee_member_id, nl_notice_list_notice_list_id)',
-'    select :P51_SELECT_EMPLOYEE, nl_notice_list_notice_list_id',
+'    select :P51_GROUP_SELECT_EMPLOYEE, nl_notice_list_notice_list_id',
 '    from nl_member',
-'    where nl_employee_member_id = :P51_EMPLOYEE;',
+'    where nl_employee_member_id = :P51_EMPLOYEE and',
+'          nl_notice_list_member_id not in (',
+'                                           select nl_notice_list_notice_list_id',
+'                                           from nl_member',
+'                                           where nl_employee_member_id = :P51_EMPLOYEE',
+'                                          );',
 'else',
 '  insert into nl_member (nl_employee_member_id, nl_notice_list_notice_list_id)',
-'    select :P51_SELECT_EMPLOYEE, nl_notice_list_notice_list_id',
+'    select :P51_GROUP_SELECT_EMPLOYEE, nl_notice_list_notice_list_id',
 '    from nl_member',
 '    where member_id in',
 '          (',
@@ -10418,7 +10390,12 @@ wwv_flow_api.create_page_process(
 '                nl_div d on nl.nl_div_div_id = d.div_id join',
 '                nl_lab l on d.nl_lab_lab_id = l.lab_id',
 '           where m.nl_employee_member_id = :P51_EMPLOYEE and',
-'                 l.code = user_lab',
+'                 l.code = user_lab and',
+'                 m.nl_notice_list_member_id not in (',
+'                                                    select m2.nl_notice_list_notice_list_id',
+'                                                    from nl_member m2',
+'                                                    where m2.nl_employee_member_id = :P51_EMPLOYEE',
+'                                                   )',
 '          );',
 'end if;',
 '',
